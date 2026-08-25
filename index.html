@@ -27,6 +27,32 @@
             margin: 0;
         }
 
+        nav {
+            background-color: white;
+            padding: 12px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #315c2b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         main {
             max-width: 900px;
             margin: auto;
@@ -73,8 +99,6 @@
             color: #596653;
         }
 
-        /* My Photo */
-
         .profile-photo {
             width: 170px;
             height: 170px;
@@ -82,8 +106,6 @@
             border-radius: 50%;
             border: 5px solid #dce8d4;
         }
-
-        /* Places */
 
         .places {
             display: grid;
@@ -114,11 +136,23 @@
             font-size: 14px;
         }
 
+        .place a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 14px;
+            background-color: #315c2b;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .place a:hover {
+            background-color: #244721;
+        }
+
         .icon {
             font-size: 25px;
         }
-
-        /* Footer */
 
         footer {
             background-color: #315c2b;
@@ -131,8 +165,6 @@
             margin: 5px;
             color: white;
         }
-
-        /* Mobile */
 
         @media (max-width: 700px) {
 
@@ -147,24 +179,31 @@
             main {
                 padding: 25px 15px;
             }
+
+            nav li {
+                display: block;
+                margin: 8px;
+            }
         }
 
     </style>
 </head>
 
-
 <body>
-
-    <!-- Header -->
 
     <header>
         <h2>🌿 Manila Nature Spots</h2>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
-
-        <!-- Guide Introduction -->
 
         <div class="intro">
 
@@ -172,13 +211,11 @@
 
             <p class="tagline">
                 A guide to peaceful nature spots around Manila
-                where you can relax, explore, and appreiciate the beauty of greenery in the city.
+                where you can relax, explore, and appreciate the beauty
+                of greenery in the city.
             </p>
 
         </div>
-
-
-        <!-- About Me -->
 
         <section>
 
@@ -201,9 +238,6 @@
 
         </section>
 
-
-        <!-- Places -->
-
         <section>
 
             <h2>Three Peaceful Spots</h2>
@@ -213,10 +247,7 @@
                 who want to enjoy a peaceful outdoor experience.
             </p>
 
-
             <div class="places">
-
-                <!-- Arroceros Forest Park -->
 
                 <div class="place">
 
@@ -234,11 +265,9 @@
                         It is a great place to walk, relax, and enjoy
                         the trees and greenery.
                     </p>
+                    <a href="places/arroceros.html">Read more</a>
 
                 </div>
-
-
-                <!-- Rizal Park -->
 
                 <div class="place">
 
@@ -257,10 +286,9 @@
                         time outdoors.
                     </p>
 
+                    <a href="places/rizal-park.html">Read more</a>
+
                 </div>
-
-
-                <!-- La Mesa Ecological Park -->
 
                 <div class="place">
 
@@ -278,6 +306,7 @@
                         peaceful surroundings for people who enjoy
                         being close to nature.
                     </p>
+                    <a href="places/la-mesa-eco-park.html">Read more</a>
 
                 </div>
 
@@ -286,9 +315,6 @@
         </section>
 
     </main>
-
-
-    <!-- Footer -->
 
     <footer>
 
