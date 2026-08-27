@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +8,6 @@
     <title>Contact - Manila Nature Spots</title>
 
     <style>
-
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -19,19 +17,20 @@
 
         header {
             background-color: #315c2b;
-            color: white;
             padding: 25px;
             text-align: center;
+            border-bottom: 3px solid #9bbb8d;
         }
 
         header h1 {
             margin: 0;
-            font-family: Georgia, serif;
+            color: white;
             font-size: 38px;
         }
 
         header p {
             margin-bottom: 15px;
+            color: #e5f0df;
         }
 
         nav {
@@ -71,13 +70,13 @@
             background-color: white;
             padding: 30px;
             border-radius: 12px;
-            border: 1px solid #dce8d4;
+            border: 1px solid #c8d9bf;
         }
 
         section h2 {
             color: #315c2b;
             text-align: center;
-            font-family: Georgia, serif;
+            font-size: 32px;
         }
 
         section p {
@@ -87,8 +86,82 @@
 
         section ul {
             line-height: 2;
-            max-width: 500px;
-            margin: 20px auto;
+            margin-bottom: 30px;
+        }
+
+        fieldset {
+            background-color: #f3f8ef;
+            border: 3px solid #9bbb8d;
+            border-radius: 25px;
+            padding: 30px;
+            margin-top: 25px;
+            box-shadow: 5px 5px 0 #c8d9bf;
+        }
+
+        legend {
+            margin: 0 auto;
+            padding: 8px 20px;
+            background-color: #dcebd5;
+            border: 3px solid white;
+            border-radius: 25px;
+            color: #315c2b;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(48, 69, 44, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 7px;
+            color: #30452c;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px;
+            border: 2px solid #9bbb8d;
+            border-radius: 12px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            background-color: white;
+            color: #30452c;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: 2px solid #6f9665;
+            border-color: #315c2b;
+        }
+
+        textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        button {
+            display: block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #315c2b;
+            color: white;
+            border: 3px solid white;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 3px 3px 0 #9bbb8d;
+        }
+
+        button:hover {
+            background-color: #244620;
         }
 
         footer {
@@ -98,18 +171,18 @@
             padding: 18px;
             color: white;
         }
-
     </style>
-
 </head>
 
 <body>
 
     <header>
 
-        <h1>🌿 Manila Nature Spots</h1>
+        <h1>Manila Nature Spots 🌿</h1>
 
-        <p>Discover. Relax. Reconnect.</p>
+        <p>
+            Discover peaceful and beautiful nature spots around Manila.
+        </p>
 
         <nav>
             <ul>
@@ -125,18 +198,82 @@
 
         <section>
 
-            <h2>Contact Me</h2>
+            <h2>Contact Me 🌱</h2>
 
             <p>
-                Have a question or want to share a nature spot in Manila?
-                You can reach me through the following methods.
+                Have a question or want to share your thoughts
+                about the nature spots in this guide?
+                I would love to hear from you!
             </p>
 
             <ul>
-                <li>Email: jaymella@example.com</li>
-                <li>Facebook: Jay Mella</li>
-                <li>Instagram: @jaymella</li>
+                <li>Email: manilanaturespots@gmail.com</li>
+                <li>Facebook: Manila Nature Spots</li>
+                <li>Instagram: @manilanaturespots</li>
             </ul>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Your details</legend>
+
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    >
+
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+
+                    <label for="subject">Subject</label>
+                    <select
+                        id="subject"
+                        name="subject"
+                    >
+                        <option value="place-question">
+                            Question About a Place
+                        </option>
+
+                        <option value="recommendation">
+                            Place Recommendation
+                        </option>
+
+                        <option value="feedback">
+                            Website Feedback
+                        </option>
+
+                        <option value="travel-tips">
+                            Travel Tips
+                        </option>
+
+                        <option value="other">
+                            Something Else
+                        </option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        required
+                    ></textarea>
+
+                    <button type="submit">
+                        Send message
+                    </button>
+
+                </fieldset>
+
+            </form>
 
         </section>
 
@@ -144,11 +281,12 @@
 
     <footer>
 
-        <p>© 2026 Jay Mella | Manila Nature Spots</p>
+        <p>
+            © 2026 Manila Nature Spots 🌿
+        </p>
 
     </footer>
 
 </body>
 
 </html>
-```
