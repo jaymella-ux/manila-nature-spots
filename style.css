@@ -17,7 +17,6 @@
     --table-background: #f8faf6;
     --focus-color: #6f9665;
     --dark-green: #244721;
-    --dark-border: #254721;
     --white: #ffffff;
 }
 
@@ -44,6 +43,7 @@ img {
 
 /* 3. Layout */
 
+
 /* Header */
 
 header {
@@ -60,6 +60,10 @@ header h2 {
 header h1 {
     font-family: Georgia, serif;
     font-size: 38px;
+}
+
+header h2 {
+    font-size: 26px;
 }
 
 header p {
@@ -122,6 +126,7 @@ footer p {
 
 
 /* 4. Components */
+
 
 /* Introduction */
 
@@ -202,16 +207,19 @@ section p {
     height: 160px;
     object-fit: cover;
     border-radius: 10px;
+    display: block;
 }
 
 .place-card h3 {
     color: var(--brand-color);
     font-family: Georgia, serif;
     font-size: 20px;
+    margin: 15px 0 10px;
 }
 
 .place-card p {
     font-size: 14px;
+    color: var(--muted-grey);
 }
 
 .place-card a {
@@ -222,11 +230,20 @@ section p {
     color: var(--white);
     text-decoration: none;
     border-radius: 6px;
+    font-weight: bold;
 }
 
 .place-card a:hover {
     background-color: var(--dark-green);
 }
+
+.place-card a:focus {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 2px;
+}
+
+
+/* Icon */
 
 .icon {
     font-size: 25px;
@@ -258,6 +275,7 @@ section p {
     object-fit: cover;
     border-radius: 12px;
     margin: 20px auto;
+    display: block;
 }
 
 .description {
@@ -319,6 +337,14 @@ td {
     text-align: center;
 }
 
+.suggest label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    color: var(--dark-ink);
+    font-weight: bold;
+}
+
 .suggest input[type="text"],
 .suggest input[type="email"] {
     width: 100%;
@@ -326,10 +352,24 @@ td {
     margin: 8px 0 20px;
     border: 3px solid var(--border-color);
     border-radius: 25px;
+    background-color: var(--white);
+    color: var(--dark-ink);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.suggest input[type="radio"],
+.suggest input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 6px;
+    accent-color: var(--brand-color);
 }
 
 .suggest input[type="text"]:focus,
-.suggest input[type="email"]:focus {
+.suggest input[type="email"]:focus,
+.suggest input[type="radio"]:focus,
+.suggest input[type="checkbox"]:focus {
     outline: 3px solid var(--brand-color);
     outline-offset: 2px;
     border-color: var(--brand-color);
@@ -348,11 +388,6 @@ td {
     color: var(--brand-color);
 }
 
-.suggest input[type="radio"],
-.suggest input[type="checkbox"] {
-    accent-color: var(--brand-color);
-}
-
 .suggest button {
     display: block;
     margin: 25px auto 0;
@@ -368,6 +403,11 @@ td {
 
 .suggest button:hover {
     background-color: var(--dark-green);
+}
+
+.suggest button:focus {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 2px;
 }
 
 
@@ -406,9 +446,13 @@ label {
     font-weight: bold;
 }
 
-input,
-select,
-textarea {
+
+/* Contact Form Fields */
+
+fieldset input[type="text"],
+fieldset input[type="email"],
+fieldset select,
+fieldset textarea {
     display: block;
     width: 100%;
     padding: 12px;
@@ -421,11 +465,12 @@ textarea {
 }
 
 
-/* Focus */
+/* Contact Form Focus */
 
-input:focus,
-select:focus,
-textarea:focus {
+fieldset input[type="text"]:focus,
+fieldset input[type="email"]:focus,
+fieldset select:focus,
+fieldset textarea:focus {
     outline: 3px solid var(--brand-color);
     outline-offset: 2px;
     border-color: var(--brand-color);
@@ -455,6 +500,11 @@ button {
 
 button:hover {
     background-color: var(--dark-green);
+}
+
+button:focus {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 2px;
 }
 
 
