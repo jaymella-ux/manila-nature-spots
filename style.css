@@ -193,21 +193,24 @@ section p {
 }
 
 
-/* Place Cards */
+/* Place Grid */
 
-.places {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.place-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
     margin-top: 30px;
 }
 
+
+/* Place Cards */
+
 .place-card {
+    flex: 1 1 240px;
     background-color: var(--light-green);
     padding: 16px;
     border-radius: 12px;
     border-left: 5px solid var(--brand-color);
-    margin-bottom: 20px;
 }
 
 .place-card img {
@@ -513,52 +516,4 @@ button:hover {
 button:focus {
     outline: 3px solid var(--focus-color);
     outline-offset: 2px;
-}
-
-
-/* Responsive */
-
-@media (max-width: 700px) {
-
-    h1 {
-        font-size: 36px;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-
-    nav ul {
-        gap: 15px;
-    }
-
-    nav li {
-        margin: 0;
-    }
-
-    main {
-        padding: 25px 15px;
-    }
-
-    .places {
-        grid-template-columns: 1fr;
-    }
-
-    .content {
-        padding: 30px 20px;
-    }
-
-    .place-image {
-        height: 250px;
-    }
-
-    table {
-        font-size: 14px;
-    }
-
-    .suggest {
-        padding: 25px 20px;
-    }
 }
