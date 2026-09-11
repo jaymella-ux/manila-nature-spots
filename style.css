@@ -50,10 +50,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: var(--header-background);
     color: var(--white);
-    padding: 20px 25px;
+    padding: 25px 40px;
+    border-bottom: 4px solid var(--border-color);
 }
 
 header h1,
@@ -81,14 +81,15 @@ header p {
 
 nav {
     background-color: var(--card-background);
-    padding: 12px 18px;
-    border-radius: 20px;
-    box-shadow: 3px 3px 0 var(--border-color);
+    padding: 14px 22px;
+    border-radius: 18px;
+    border: 2px solid var(--card-background);
+    box-shadow: 4px 4px 0 var(--border-color);
 }
 
 nav ul {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -102,6 +103,7 @@ nav a {
     color: var(--brand-color);
     text-decoration: none;
     font-weight: bold;
+    font-size: 17px;
 }
 
 nav a:hover {
@@ -112,9 +114,9 @@ nav a:hover {
 /* Main */
 
 main {
-    max-width: 900px;
+    max-width: 1100px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 40px 25px;
 }
 
 
@@ -125,6 +127,7 @@ footer {
     color: var(--white);
     padding: 25px;
     margin-top: 30px;
+    border-top: 4px solid var(--border-color);
 }
 
 footer p {
@@ -139,9 +142,11 @@ footer p {
 /* Introduction */
 
 .intro {
-    background-color: var(--card-background);
-    padding: 40px 25px;
-    border-radius: 15px;
+    background-color: var(--light-green);
+    padding: 45px 30px;
+    border: 3px solid var(--border-color);
+    border-radius: 25px;
+    box-shadow: 7px 7px 0 var(--border-color);
 }
 
 h1 {
@@ -151,8 +156,12 @@ h1 {
     margin-bottom: 20px;
 }
 
+.intro h1 {
+    margin-top: 0;
+}
+
 .tagline {
-    max-width: 650px;
+    max-width: 700px;
     margin: auto;
     font-size: 18px;
     line-height: 1.6;
@@ -164,9 +173,11 @@ h1 {
 
 section {
     background-color: var(--card-background);
-    margin-top: 30px;
-    padding: 35px 25px;
-    border-radius: 15px;
+    margin-top: 35px;
+    padding: 35px 30px;
+    border: 3px solid var(--border-color);
+    border-radius: 25px;
+    box-shadow: 7px 7px 0 var(--border-color);
 }
 
 section h2 {
@@ -175,7 +186,7 @@ section h2 {
 }
 
 section p {
-    max-width: 650px;
+    max-width: 700px;
     margin: 15px auto;
     line-height: 1.6;
     color: var(--muted-grey);
@@ -189,7 +200,8 @@ section p {
     height: 170px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid var(--soft-green);
+    border: 5px solid var(--border-color);
+    box-shadow: 4px 4px 0 var(--soft-green);
 }
 
 
@@ -209,15 +221,17 @@ section p {
     flex: 1 1 240px;
     background-color: var(--light-green);
     padding: 16px;
-    border-radius: 12px;
-    border-left: 5px solid var(--brand-color);
+    border: 3px solid var(--border-color);
+    border-left: 6px solid var(--brand-color);
+    border-radius: 18px;
+    box-shadow: 5px 5px 0 var(--border-color);
 }
 
 .place-card img {
     width: 100%;
     height: 160px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 12px;
     display: block;
 }
 
@@ -236,12 +250,13 @@ section p {
 .place-card a {
     display: inline-block;
     margin-top: 10px;
-    padding: 8px 14px;
+    padding: 9px 16px;
     background-color: var(--brand-color);
     color: var(--white);
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 20px;
     font-weight: bold;
+    box-shadow: 3px 3px 0 var(--border-color);
 }
 
 .place-card a:hover {
@@ -266,7 +281,9 @@ section p {
 .content {
     background-color: var(--card-background);
     padding: 40px 30px;
-    border-radius: 15px;
+    border: 3px solid var(--border-color);
+    border-radius: 25px;
+    box-shadow: 7px 7px 0 var(--border-color);
 }
 
 .content h1 {
@@ -284,7 +301,8 @@ section p {
     max-width: 750px;
     height: 400px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 15px;
+    border: 3px solid var(--border-color);
     margin: 20px auto;
     display: block;
 }
@@ -310,7 +328,7 @@ table {
 
 th,
 td {
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
     padding: 12px;
 }
 
@@ -331,8 +349,8 @@ td {
     margin: 50px auto 10px;
     padding: 30px;
     background-color: var(--form-background);
-    border: 4px solid var(--brand-color);
-    border-radius: 35px;
+    border: 3px solid var(--brand-color);
+    border-radius: 30px;
     box-shadow: 7px 7px 0 var(--border-color);
     position: relative;
     text-align: left;
@@ -362,7 +380,7 @@ td {
     padding: 12px;
     margin: 8px 0 20px;
     border: 3px solid var(--border-color);
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: var(--white);
     color: var(--dark-ink);
     font-family: Arial, sans-serif;
@@ -388,13 +406,16 @@ td {
 
 .suggest fieldset {
     border: 3px solid var(--border-color);
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 15px;
     margin-bottom: 20px;
 }
 
 .suggest legend {
-    padding: 0 10px;
+    padding: 8px 15px;
+    background-color: var(--soft-green);
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
     font-weight: bold;
     color: var(--brand-color);
 }
@@ -406,7 +427,7 @@ td {
     background-color: var(--brand-color);
     color: var(--white);
     border: none;
-    border-radius: 30px;
+    border-radius: 25px;
     font-weight: bold;
     cursor: pointer;
     box-shadow: 4px 4px 0 var(--border-color);
@@ -467,8 +488,8 @@ fieldset textarea {
     display: block;
     width: 100%;
     padding: 12px;
-    border: 2px solid var(--border-color);
-    border-radius: 12px;
+    border: 3px solid var(--border-color);
+    border-radius: 20px;
     font-family: Arial, sans-serif;
     font-size: 16px;
     background-color: var(--white);
@@ -502,7 +523,7 @@ button {
     background-color: var(--brand-color);
     color: var(--white);
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -516,4 +537,14 @@ button:hover {
 button:focus {
     outline: 3px solid var(--focus-color);
     outline-offset: 2px;
+}
+/* Card Hover */
+
+.place-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 7px 7px 0 var(--border-color);
 }
