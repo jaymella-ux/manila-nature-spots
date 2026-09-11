@@ -225,6 +225,12 @@ section p {
     border-left: 6px solid var(--brand-color);
     border-radius: 18px;
     box-shadow: 5px 5px 0 var(--border-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 8px 8px 0 var(--border-color);
 }
 
 .place-card img {
@@ -537,14 +543,4 @@ button:hover {
 button:focus {
     outline: 3px solid var(--focus-color);
     outline-offset: 2px;
-}
-/* Card Hover */
-
-.place-card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.place-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 7px 7px 0 var(--border-color);
 }
