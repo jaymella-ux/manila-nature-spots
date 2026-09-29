@@ -12,235 +12,282 @@
 
 <body>
 
-    <header>
+    <div class="page">
 
-        <h2>🌿 Manila Nature Spots</h2>
+        <header>
 
-    </header>
+            <h2>🌿 Manila Nature Spots</h2>
 
-    <nav>
+            <nav>
 
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
 
-    </nav>
+            </nav>
 
-    <main>
+        </header>
 
-        <div class="content">
 
-            <h1>Arroceros Forest Park</h1>
+        <aside>
 
-            <img
-                src="../images/arroceros.jpg"
-                alt="Arroceros Forest Park with trees and greenery in Manila"
-                class="place-image"
-            >
+            <h2>Quick Guide</h2>
 
-            <h2>About Arroceros Forest Park</h2>
+            <p>
+                Arroceros Forest Park is a peaceful urban forest
+                located in the heart of Manila.
+            </p>
 
-            <div class="description">
+            <ul>
+                <li>🌳 Trees and greenery</li>
+                <li>🚶 Walking</li>
+                <li>📸 Photography</li>
+                <li>🌿 Relaxing</li>
+            </ul>
 
-                <p>
-                    Arroceros Forest Park is a peaceful urban forest
-                    located in the heart of Manila. It is known for its
-                    many trees and green surroundings, making it a nice
-                    place to take a break from the busy city.
-                </p>
+            <p>
+                Morning and late afternoon are good times to
+                enjoy the park.
+            </p>
 
-                <p>
-                    I recommend Arroceros Forest Park because it provides
-                    a quiet natural environment where people can walk,
-                    relax, take pictures, and enjoy the greenery. It is
-                    a good place for people who want to spend some time
-                    outdoors without leaving Manila.
-                </p>
+        </aside>
 
-                <p>
-                    The park is also a great example of how nature can
-                    be preserved in a busy urban area. Visitors can enjoy
-                    the trees, plants, and peaceful atmosphere while
-                    taking a break from the surrounding city.
-                </p>
+
+        <main>
+
+            <div class="content">
+
+                <h1>Arroceros Forest Park</h1>
+
+                <img
+                    src="../images/arroceros.jpg"
+                    alt="Arroceros Forest Park with trees and greenery in Manila"
+                    class="place-image"
+                >
+
+
+                <h2>About Arroceros Forest Park</h2>
+
+                <div class="description">
+
+                    <p>
+                        Arroceros Forest Park is a peaceful urban forest
+                        located in the heart of Manila. It is known for its
+                        many trees and green surroundings, making it a nice
+                        place to take a break from the busy city.
+                    </p>
+
+                    <p>
+                        I recommend Arroceros Forest Park because it provides
+                        a quiet natural environment where people can walk,
+                        relax, take pictures, and enjoy the greenery. It is
+                        a good place for people who want to spend some time
+                        outdoors without leaving Manila.
+                    </p>
+
+                    <p>
+                        The park is also a great example of how nature can
+                        be preserved in a busy urban area. Visitors can enjoy
+                        the trees, plants, and peaceful atmosphere while
+                        taking a break from the surrounding city.
+                    </p>
+
+                </div>
+
+
+                <h2>Arroceros Forest Park Details</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Location</th>
+                        <td>Manila, Philippines</td>
+                    </tr>
+
+                    <tr>
+                        <th>Type</th>
+                        <td>Urban Forest Park</td>
+                    </tr>
+
+                    <tr>
+                        <th>Price Range</th>
+                        <td>Free</td>
+                    </tr>
+
+                    <tr>
+                        <th>Best Time to Visit</th>
+                        <td>Morning or late afternoon</td>
+                    </tr>
+
+                    <tr>
+                        <th>Recommended For</th>
+                        <td>
+                            Walking, relaxing, photography, and nature
+                        </td>
+                    </tr>
+
+                </table>
+
+
+                <section class="suggest">
+
+                    <h2>🌿 Suggest a Place 🌿</h2>
+
+                    <p>
+                        Any Recommended Places? Tell me about it!
+                    </p>
+
+                    <form>
+
+                        <label for="place-name">
+                            📍 Place name:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="place-name"
+                            name="place-name"
+                            placeholder="Type a place name..."
+                            required
+                        >
+
+
+                        <fieldset>
+
+                            <legend>
+                                🌳 What type of place is it?
+                            </legend>
+
+                            <input
+                                type="radio"
+                                id="outdoors"
+                                name="category"
+                                value="outdoors"
+                            >
+
+                            <label for="outdoors">
+                                🌿 Outdoors
+                            </label>
+
+
+                            <input
+                                type="radio"
+                                id="study"
+                                name="category"
+                                value="study"
+                            >
+
+                            <label for="study">
+                                📚 Study Spot
+                            </label>
+
+
+                            <input
+                                type="radio"
+                                id="food"
+                                name="category"
+                                value="food"
+                            >
+
+                            <label for="food">
+                                🍜 Food
+                            </label>
+
+                        </fieldset>
+
+
+                        <p>
+                            <strong>✨ What's good about it?</strong>
+                        </p>
+
+
+                        <input
+                            type="checkbox"
+                            id="affordable"
+                            name="good-points"
+                            value="affordable"
+                        >
+
+                        <label for="affordable">
+                            💰 Affordable
+                        </label>
+
+                        <br>
+
+
+                        <input
+                            type="checkbox"
+                            id="wifi"
+                            name="good-points"
+                            value="wifi"
+                        >
+
+                        <label for="wifi">
+                            📶 Good Wi-Fi
+                        </label>
+
+                        <br>
+
+
+                        <input
+                            type="checkbox"
+                            id="quiet"
+                            name="good-points"
+                            value="quiet"
+                        >
+
+                        <label for="quiet">
+                            🤫 Quiet
+                        </label>
+
+                        <br><br>
+
+
+                        <label for="email">
+                            📧 Contact email:
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="your@email.com"
+                            required
+                        >
+
+
+                        <button type="submit">
+                            Suggest Place
+                        </button>
+
+                    </form>
+
+                </section>
 
             </div>
 
-            <h2>Arroceros Forest Park Details</h2>
-
-            <table>
-
-                <tr>
-                    <th>Location</th>
-                    <td>Manila, Philippines</td>
-                </tr>
-
-                <tr>
-                    <th>Type</th>
-                    <td>Urban Forest Park</td>
-                </tr>
-
-                <tr>
-                    <th>Price Range</th>
-                    <td>Free</td>
-                </tr>
-
-                <tr>
-                    <th>Best Time to Visit</th>
-                    <td>Morning or late afternoon</td>
-                </tr>
-
-                <tr>
-                    <th>Recommended For</th>
-                    <td>Walking, relaxing, photography, and nature</td>
-                </tr>
-
-            </table>
+        </main>
 
 
-            <section class="suggest">
+        <footer>
 
-                <h2>🌿 Suggest a Place 🌿</h2>
+            <p>
+                <strong>Manila Nature Spots</strong>
+            </p>
 
-                <p>
-                    Any Recommended Places? Tell me about it!
-                </p>
+            <p>
+                Discover. Relax. Reconnect.
+            </p>
 
-                <form>
+            <p>
+                © 2026 Jay Mella
+            </p>
 
-                    <label for="place-name">
-                        📍 Place name:
-                    </label>
+        </footer>
 
-                    <input
-                        type="text"
-                        id="place-name"
-                        name="place-name"
-                        placeholder="Type a place name..."
-                        required
-                    >
-
-                    <fieldset>
-
-                        <legend>
-                            🌳 What type of place is it?
-                        </legend>
-
-                        <input
-                            type="radio"
-                            id="outdoors"
-                            name="category"
-                            value="outdoors"
-                        >
-
-                        <label for="outdoors">
-                            🌿 Outdoors
-                        </label>
-
-                        <input
-                            type="radio"
-                            id="study"
-                            name="category"
-                            value="study"
-                        >
-
-                        <label for="study">
-                            📚 Study Spot
-                        </label>
-
-                        <input
-                            type="radio"
-                            id="food"
-                            name="category"
-                            value="food"
-                        >
-
-                        <label for="food">
-                            🍜 Food
-                        </label>
-
-                    </fieldset>
-
-
-                    <p>
-                        <strong>✨ What's good about it?</strong>
-                    </p>
-
-                    <input
-                        type="checkbox"
-                        id="affordable"
-                        name="good-points"
-                        value="affordable"
-                    >
-
-                    <label for="affordable">
-                        💰 Affordable
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="checkbox"
-                        id="wifi"
-                        name="good-points"
-                        value="wifi"
-                    >
-
-                    <label for="wifi">
-                        📶 Good Wi-Fi
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="checkbox"
-                        id="quiet"
-                        name="good-points"
-                        value="quiet"
-                    >
-
-                    <label for="quiet">
-                        🤫 Quiet
-                    </label>
-
-                    <br><br>
-
-
-                    <label for="email">
-                        📧 Contact email:
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="your@email.com"
-                        required
-                    >
-
-                    <button type="submit">
-                        Suggest Place
-                    </button>
-
-                </form>
-
-            </section>
-
-        </div>
-
-    </main>
-
-    <footer>
-
-        <p><strong>Manila Nature Spots</strong></p>
-
-        <p>Discover. Relax. Reconnect.</p>
-
-        <p>© 2026 Jay Mella</p>
-
-    </footer>
+    </div>
 
 </body>
 

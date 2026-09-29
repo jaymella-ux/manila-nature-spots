@@ -6,237 +6,288 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>La Mesa Eco Park | Manila Nature Spots</title>
+
     <link rel="stylesheet" href="../style.css">
-    
+
 </head>
 
 <body>
 
-    <header>
+    <div class="page">
 
-        <h2>🌿 Manila Nature Spots</h2>
+        <header>
 
-    </header>
+            <h2>🌿 Manila Nature Spots</h2>
 
-    <nav>
+            <nav>
 
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
 
-    </nav>
+            </nav>
 
-    <main>
+        </header>
 
-        <div class="content">
 
-            <h1>La Mesa Eco Park</h1>
+        <aside>
 
-            <img
-                src="../images/la-mesa-eco-park.jpg"
-                alt="Trees and greenery at La Mesa Eco Park in Quezon City"
-                class="place-image"
-            >
+            <h2>Quick Guide</h2>
 
-            <h2>About La Mesa Eco Park</h2>
+            <p>
+                La Mesa Eco Park is a large green space in
+                Quezon City where visitors can enjoy nature.
+            </p>
 
-            <div class="description">
+            <ul>
+                <li>🌳 Trees and greenery</li>
+                <li>🚶 Walking</li>
+                <li>📸 Photography</li>
+                <li>🌿 Outdoor activities</li>
+            </ul>
 
-                <p>
-                    La Mesa Eco Park is a large natural area in Quezon City
-                    where visitors can enjoy trees, plants, trails, and
-                    peaceful surroundings. It is a good place for people
-                    who want to spend time outdoors and enjoy nature.
-                </p>
+            <p>
+                Morning and late afternoon are good times to
+                enjoy the park.
+            </p>
 
-                <p>
-                    I recommend La Mesa Eco Park because it offers a relaxing
-                    environment away from the busy city. Visitors can walk
-                    around the park, explore the trails, take pictures,
-                    and enjoy the natural surroundings.
-                </p>
+        </aside>
 
-                <p>
-                    The park is also a good place to visit with family and
-                    friends. Its green spaces and outdoor activities make
-                    it a nice destination for people who want to reconnect
-                    with nature.
-                </p>
+
+        <main>
+
+            <div class="content">
+
+                <h1>La Mesa Eco Park</h1>
+
+                <img
+                    src="../images/la-mesa-eco-park.jpg"
+                    alt="Trees and greenery at La Mesa Eco Park in Quezon City"
+                    class="place-image"
+                >
+
+
+                <h2>About La Mesa Eco Park</h2>
+
+                <div class="description">
+
+                    <p>
+                        La Mesa Eco Park is a large natural area in Quezon City
+                        where visitors can enjoy trees, plants, trails, and
+                        peaceful surroundings. It is a good place for people
+                        who want to spend time outdoors and enjoy nature.
+                    </p>
+
+                    <p>
+                        I recommend La Mesa Eco Park because it offers a relaxing
+                        environment away from the busy city. Visitors can walk
+                        around the park, explore the trails, take pictures,
+                        and enjoy the natural surroundings.
+                    </p>
+
+                    <p>
+                        The park is also a good place to visit with family and
+                        friends. Its green spaces and outdoor activities make
+                        it a nice destination for people who want to reconnect
+                        with nature.
+                    </p>
+
+                </div>
+
+
+                <h2>La Mesa Eco Park Details</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Location</th>
+                        <td>Quezon City, Philippines</td>
+                    </tr>
+
+                    <tr>
+                        <th>Type</th>
+                        <td>Ecological Park</td>
+                    </tr>
+
+                    <tr>
+                        <th>Price Range</th>
+                        <td>Varies depending on activities</td>
+                    </tr>
+
+                    <tr>
+                        <th>Best Time to Visit</th>
+                        <td>Morning or late afternoon</td>
+                    </tr>
+
+                    <tr>
+                        <th>Recommended For</th>
+                        <td>
+                            Walking, nature, photography, and outdoor activities
+                        </td>
+                    </tr>
+
+                </table>
+
+
+                <section class="suggest">
+
+                    <h2>🌿 Suggest a Place 🌿</h2>
+
+                    <p>
+                        Any Recommended Places? Tell me about it!
+                    </p>
+
+                    <form>
+
+                        <label for="place-name">
+                            📍 Place name:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="place-name"
+                            name="place-name"
+                            placeholder="Type a place name..."
+                            required
+                        >
+
+
+                        <fieldset>
+
+                            <legend>
+                                🌳 What type of place is it?
+                            </legend>
+
+                            <input
+                                type="radio"
+                                id="outdoors"
+                                name="category"
+                                value="outdoors"
+                            >
+
+                            <label for="outdoors">
+                                🌿 Outdoors
+                            </label>
+
+
+                            <input
+                                type="radio"
+                                id="study"
+                                name="category"
+                                value="study"
+                            >
+
+                            <label for="study">
+                                📚 Study Spot
+                            </label>
+
+
+                            <input
+                                type="radio"
+                                id="food"
+                                name="category"
+                                value="food"
+                            >
+
+                            <label for="food">
+                                🍜 Food
+                            </label>
+
+                        </fieldset>
+
+
+                        <p>
+                            <strong>✨ What's good about it?</strong>
+                        </p>
+
+
+                        <input
+                            type="checkbox"
+                            id="affordable"
+                            name="good-points"
+                            value="affordable"
+                        >
+
+                        <label for="affordable">
+                            💰 Affordable
+                        </label>
+
+                        <br>
+
+
+                        <input
+                            type="checkbox"
+                            id="wifi"
+                            name="good-points"
+                            value="wifi"
+                        >
+
+                        <label for="wifi">
+                            📶 Good Wi-Fi
+                        </label>
+
+                        <br>
+
+
+                        <input
+                            type="checkbox"
+                            id="quiet"
+                            name="good-points"
+                            value="quiet"
+                        >
+
+                        <label for="quiet">
+                            🤫 Quiet
+                        </label>
+
+                        <br><br>
+
+
+                        <label for="email">
+                            📧 Contact email:
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="your@email.com"
+                            required
+                        >
+
+
+                        <button type="submit">
+                            🌱 Suggest Place
+                        </button>
+
+                    </form>
+
+                </section>
 
             </div>
 
-            <h2>La Mesa Eco Park Details</h2>
+        </main>
 
-            <table>
 
-                <tr>
-                    <th>Location</th>
-                    <td>Quezon City, Philippines</td>
-                </tr>
+        <footer>
 
-                <tr>
-                    <th>Type</th>
-                    <td>Ecological Park</td>
-                </tr>
+            <p>
+                <strong>Manila Nature Spots</strong>
+            </p>
 
-                <tr>
-                    <th>Price Range</th>
-                    <td>Varies depending on activities</td>
-                </tr>
+            <p>
+                Discover. Relax. Reconnect.
+            </p>
 
-                <tr>
-                    <th>Best Time to Visit</th>
-                    <td>Morning or late afternoon</td>
-                </tr>
+            <p>
+                © 2026 Jay Mella
+            </p>
 
-                <tr>
-                    <th>Recommended For</th>
-                    <td>Walking, nature, photography, and outdoor activities</td>
-                </tr>
+        </footer>
 
-            </table>
-
-            <section class="suggest">
-
-                <h2>🌿 Suggest a Place 🌿</h2>
-
-                <p>
-                    Any Recommended Places? Tell me about it!
-                </p>
-
-                <form>
-
-                    <label for="place-name">
-                        📍 Place name:
-                    </label>
-
-                    <input
-                        type="text"
-                        id="place-name"
-                        name="place-name"
-                        placeholder="Type a place name..."
-                        required
-                    >
-
-                    <fieldset>
-
-                        <legend>
-                            🌳 What type of place is it?
-                        </legend>
-
-                        <input
-                            type="radio"
-                            id="outdoors"
-                            name="category"
-                            value="outdoors"
-                        >
-
-                        <label for="outdoors">
-                            🌿 Outdoors
-                        </label>
-
-                        <input
-                            type="radio"
-                            id="study"
-                            name="category"
-                            value="study"
-                        >
-
-                        <label for="study">
-                            📚 Study Spot
-                        </label>
-
-                        <input
-                            type="radio"
-                            id="food"
-                            name="category"
-                            value="food"
-                        >
-
-                        <label for="food">
-                            🍜 Food
-                        </label>
-
-                    </fieldset>
-
-                    <p>
-                        <strong>✨ What's good about it?</strong>
-                    </p>
-
-                    <input
-                        type="checkbox"
-                        id="affordable"
-                        name="good-points"
-                        value="affordable"
-                    >
-
-                    <label for="affordable">
-                        💰 Affordable
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="checkbox"
-                        id="wifi"
-                        name="good-points"
-                        value="wifi"
-                    >
-
-                    <label for="wifi">
-                        📶 Good Wi-Fi
-                    </label>
-
-                    <br>
-
-                    <input
-                        type="checkbox"
-                        id="quiet"
-                        name="good-points"
-                        value="quiet"
-                    >
-
-                    <label for="quiet">
-                        🤫 Quiet
-                    </label>
-
-                    <br><br>
-
-                    <label for="email">
-                        📧 Contact email:
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="your@email.com"
-                        required
-                    >
-
-                    <button type="submit">
-                        🌱 Suggest Place
-                    </button>
-
-                </form>
-
-            </section>
-
-        </div>
-
-    </main>
-
-    <footer>
-
-        <p><strong>Manila Nature Spots</strong></p>
-
-        <p>Discover. Relax. Reconnect.</p>
-
-        <p>© 2026 Jay Mella</p>
-
-    </footer>
+    </div>
 
 </body>
 
