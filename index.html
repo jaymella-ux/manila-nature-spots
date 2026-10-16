@@ -16,7 +16,7 @@
 
         <header>
 
-            <h1>🌿 Manila Nature Spots</h1>
+            <h1 id="guide-name">🌿 Manila Nature Spots</h1>
 
             <nav>
                 <ul>
@@ -104,11 +104,19 @@
                     who want to enjoy a peaceful outdoor experience.
                 </p>
 
+                <!-- JavaScript-computed value -->
+
+                <p>
+                    <strong>Places reviewed:</strong>
+                    <span id="place-count">0</span>
+                </p>
+
+
                 <div class="place-grid">
 
                     <!-- Arroceros Forest Park -->
 
-                    <div class="place-card">
+                    <div class="place-card nature-place">
 
                         <img
                             src="images/arroceros.jpg"
@@ -130,7 +138,7 @@
 
                     <!-- Rizal Park -->
 
-                    <div class="place-card">
+                    <div class="place-card nature-place">
 
                         <img
                             src="images/rizal-park.jpg"
@@ -152,7 +160,7 @@
 
                     <!-- La Mesa Eco Park -->
 
-                    <div class="place-card">
+                    <div class="place-card nature-place">
 
                         <img
                             src="images/la-mesa-eco-park.jpg"
@@ -188,13 +196,20 @@
                 Discover. Relax. Reconnect.
             </p>
 
-            <p>
+            <!-- JavaScript-generated copyright -->
+
+            <p id="copyright">
                 © 2026 Jay Mella
             </p>
 
         </footer>
 
     </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
 
 </body>
 
